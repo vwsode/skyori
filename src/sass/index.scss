@@ -1,0 +1,16 @@
+@import "./abstract/vars";
+
+// Base
+@import "./base/reset";
+
+// Components
+@import "./components/container";
+@import "./components/tabs";
+@import "./components/input-checkbox";
+
+// Sections
+@import "./sections/avia-tickets";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}

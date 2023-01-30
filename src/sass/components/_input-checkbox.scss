@@ -1,0 +1,50 @@
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__control {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $clr-border-light;
+    border-radius: $rounded-sm;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+    transition-property: border-color;
+    transition-duration: 200ms;
+    &::before {
+      content: "";
+      background-image: url("../../assets/Shape.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 200ms;
+      opacity: 0;
+    }
+    &._active::before {
+      opacity: 1;
+    }
+    &._active {
+      border-color: $clr-primary;
+    }
+  }
+  &__label {
+    color: $clr-text-primary;
+    font-size: 13px;
+    user-select: none;
+  }
+}

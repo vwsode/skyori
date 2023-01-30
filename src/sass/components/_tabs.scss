@@ -1,0 +1,43 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &__btn {
+        border-top: 1px solid $clr-border-light;
+        border-bottom: 1px solid $clr-border-light;
+        border-right: 1px solid $clr-border-light;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $clr-white;
+        color: $clr-text-primary;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 15px 0;
+
+        transition-property: border-color, background-color, color;
+        transition-duration: 100ms;
+
+        &:hover {
+            background-color: $clr-bg-light;
+        }
+
+        &._active {
+            border-color: $clr-primary;
+            background-color: $clr-primary;
+            color: $clr-white;
+        }
+
+        &:first-child {
+            border-left: 1px solid $clr-border-light;
+            border-top-left-radius: $rounded-sm;
+            border-bottom-left-radius: $rounded-sm;
+        }
+        &:last-child {
+            border-top-right-radius: $rounded-sm;
+            border-bottom-right-radius: $rounded-sm;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.container {
+    $container-p: 20px;
+    max-width: calc(755px + $container-p);
+    margin: 0 auto;
+    padding: $container-p;
+}

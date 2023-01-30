@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Тестовое задание Skyori</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>ТЕСТОВОЕ ЗАДАНИЕ SKYORI</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="avia-tickets">
+          <div class="avia-tickets__filter">
+            <h4 class="avia-tickets__filter-title">КОЛИЧЕСТВО ПЕРЕСАДОК</h4>
+            <div class="avia-tickets__filter-items">
+              <label class="avia-tickets__filter-item input-field">
+                <input
+                  class="input-field__control"
+                  type="checkbox"
+                  data-stops="all"
+                />
+                <span class="input-field__label">Все</span>
+              </label>
+              <label class="avia-tickets__filter-item input-field">
+                <input
+                  class="input-field__control"
+                  type="checkbox"
+                  data-stops="0"
+                />
+                <span class="input-field__label">Без пересадок</span>
+              </label>
+              <label class="avia-tickets__filter-item input-field">
+                <input
+                  class="input-field__control"
+                  type="checkbox"
+                  data-stops="1"
+                />
+                <span class="input-field__label">1 пересадка</span>
+              </label>
+              <label class="avia-tickets__filter-item input-field">
+                <input
+                  class="input-field__control"
+                  type="checkbox"
+                  data-stops="2"
+                />
+                <span class="input-field__label">2 пересадки</span>
+              </label>
+              <label class="avia-tickets__filter-item input-field">
+                <input
+                  class="input-field__control"
+                  type="checkbox"
+                  data-stops="3"
+                />
+                <span class="input-field__label">3 пересадки</span>
+              </label>
+            </div>
+          </div>
+          <div class="avia-tickets__content">
+            <div class="avia-tickets__tabs tabs">
+              <button class="avia-tickets__tab tabs__btn" data-sort="price">
+                САМЫЙ ДЕШЕВЫЙ
+              </button>
+              <button class="avia-tickets__tab tabs__btn" data-sort="duration">
+                САМЫЙ БЫСТРЫЙ
+              </button>
+            </div>
+            <ul class="avia-tickets__list"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

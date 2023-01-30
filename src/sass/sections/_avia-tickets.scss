@@ -1,0 +1,102 @@
+.avia-tickets {
+  display: flex;
+  gap: 20px;
+  &__filter {
+    padding: 20px 0;
+    min-width: 230px;
+    background-color: $clr-white;
+    box-shadow: $shadow-sm;
+    border: 1px solid $clr-border-light;
+    border-radius: $rounded-sm;
+    align-self: flex-start;
+
+    &-title {
+      padding: 0 20px;
+      font-weight: 600;
+      font-size: 12px;
+      color: $clr-text-primary;
+      margin-bottom: 10px;
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item {
+      padding: 10px 20px;
+      &:hover {
+        background-color: #f1fcff;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  &__tabs {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__item {
+  }
+}
+
+.ticket {
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: $shadow-sm;
+  border: 1px solid $clr-border-light;
+  max-width: 500px;
+  background-color: $clr-white;
+  border-radius: $rounded-sm;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__price {
+    color: $clr-primary;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__company-logo {
+    cursor: pointer;
+    // width: 200px;
+    // height: 40px;
+    // background-color: $clr-border-light;
+  }
+
+  &__info-segments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .info-segment {
+    display: flex;
+    justify-content: space-between;
+    &__transfer {
+    }
+    &__route {
+    }
+    &__time {
+    }
+
+    &__title {
+      display: block;
+      color: $clr-text-secondary;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &__desc {
+      color: $clr-text-primary;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
